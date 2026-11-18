@@ -43,10 +43,24 @@ async function main() {
     profileUrl: previous.profileUrl,
     checkedOn: checkedAt.slice(0, 10),
     checkedAt,
+    lastAttemptAt: checkedAt,
+    lastAttemptStatus: 'success',
     stats
   };
   await writeFile(OUTPUT, JSON.stringify(snapshot, null, 2) + '\n', 'utf8');
   console.log(`Google Scholar: ${stats.citationCount} citations, h ${stats.hIndex}, i10 ${stats.i10Index}.`);
 }
 
-main().catch(error => console.warn(`Google Scholar update skipped: ${error.message}. Last verified snapshot was preserved.`));
+main().catch(async error => {
+  console.warn(`Google Scholar update skipped: ${error.message}. Last verified snapshot was preserved.`);
+  try {
+    const previous = JSON.parse(await readFile(OUTPUT, 'utf8'));
+    previous.lastAttemptAt = new Date().toISOString();
+    previous.lastAttemptStatus = 'failed';
+    previous.lastAttemptError = error.message;
+    await writeFile(OUTPUT, JSON.stringify(previous, null, 2) + '\n', 'utf8');
+  } catch (writeError) {
+    console.error(`Could not record Google Scholar update result: ${writeError.message}`);
+    process.exitCode = 1;
+  }
+});
