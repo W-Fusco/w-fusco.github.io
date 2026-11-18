@@ -4,13 +4,13 @@ Site estático publicado em `https://w-fusco.github.io/`. O visual e a estrutura
 
 ## Personalizar
 
-Edite `data/profile.json` com biografia, temas, projetos, ensino, currículo, apresentações e links. `data/auto/stats.json` é gerado a partir do perfil OpenAlex associado ao ORCID `0000-0002-1418-0423`. A página inicial mostra três trabalhos recentes; a página de publicações mostra 20 trabalhos recentes, cinco trabalhos mais citados e indicadores do OpenAlex. Os indicadores do Google Acadêmico são um registro manual, datado, em `data/scholar_snapshot.json`; confira o perfil para valores atuais. O livro organizado de 2026 permanece em `data/manual_publications.json` enquanto não for encontrado no OpenAlex.
+Edite `data/profile.json` com biografia, temas, projetos, ensino, currículo, apresentações e links. `data/auto/stats.json` é gerado a partir do perfil OpenAlex associado ao ORCID `0000-0002-1418-0423`. A página inicial mostra três trabalhos recentes; a página de publicações mostra 20 trabalhos recentes, cinco trabalhos mais citados e indicadores do OpenAlex. Os indicadores do Google Acadêmico ficam em `data/scholar_snapshot.json` e são consultados diariamente na página pública do perfil, quando o acesso está disponível. Se a consulta falhar, o último registro válido e sua data são preservados. O livro organizado de 2026 permanece em `data/manual_publications.json` enquanto não for encontrado no OpenAlex.
 
 Para ver o site localmente, execute `node scripts/preview.mjs` nesta pasta e abra `http://127.0.0.1:8765/`. Abrir o arquivo HTML diretamente pode impedir a leitura dos arquivos JSON pelo navegador.
 
 ## Atualização automática
 
-O fluxo `.github/workflows/publish.yml` roda diariamente e também após alterações na branch `main`. Ele consulta o OpenAlex, valida o nome e o ORCID, atualiza `data/auto/stats.json` e publica o site no GitHub Pages. A configuração de Pages deve usar **GitHub Actions** como fonte de publicação. O fluxo funciona sem chave para as consultas atuais. Uma chave gratuita pode ser adicionada como segredo `OPENALEX_API_KEY` para aumentar a margem de uso; nunca coloque a chave no repositório.
+O fluxo `.github/workflows/publish.yml` roda diariamente e também após alterações na branch `main`. Ele consulta o OpenAlex, valida o nome e o ORCID, atualiza `data/auto/stats.json`, tenta consultar o perfil público do Google Acadêmico e publica o site no GitHub Pages. A consulta ao Google Acadêmico segue a permissão para páginas de perfil em `robots.txt`; se o acesso for negado ou o formato mudar, o último registro válido é preservado. A configuração de Pages deve usar **GitHub Actions** como fonte de publicação. O fluxo funciona sem chave para as consultas atuais. Uma chave gratuita pode ser adicionada como segredo `OPENALEX_API_KEY` para aumentar a margem de uso; nunca coloque a chave no repositório.
 
 Para atualizar localmente: `node scripts/fetch-stats.mjs`. Se a consulta falhar ou o perfil não corresponder ao nome e ORCID esperados, o arquivo de dados existente é preservado.
 

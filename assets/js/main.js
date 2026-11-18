@@ -100,7 +100,7 @@ async function init() {
     if (href) $('#scholar-profile').href = href;
     if (scholar.checkedOn) {
       const checked = new Date(`${String(scholar.checkedOn).slice(0,10)}T12:00:00`).toLocaleDateString('pt-BR');
-      $('#scholar-note').textContent = `Valores consultados em ${checked}. Para números atuais, abra o perfil.`;
+      $('#scholar-note').textContent = `Última consulta válida: ${checked}. Para números atuais, abra o perfil.`;
     }
   }
   if (data.updated && $('#data-note')) {

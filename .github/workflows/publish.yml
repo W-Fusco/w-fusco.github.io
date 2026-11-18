@@ -30,9 +30,11 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: node scripts/fetch-stats.mjs
+      - name: Refresh Google Scholar profile
+        run: node scripts/fetch-scholar.mjs
       - name: Save refreshed data
         run: |
-          git add data/auto/stats.json
+          git add data/auto/stats.json data/scholar_snapshot.json
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh research data'
             git push origin HEAD:main
