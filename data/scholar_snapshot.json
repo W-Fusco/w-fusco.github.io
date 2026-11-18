@@ -6,5 +6,8 @@
     "citationCount": 946,
     "hIndex": 17,
     "i10Index": 32
-  }
+  },
+  "lastAttemptAt": "2026-11-18T17:10:36.223Z",
+  "lastAttemptStatus": "failed",
+  "lastAttemptError": "scholar.google.com returned HTTP 403"
 }
