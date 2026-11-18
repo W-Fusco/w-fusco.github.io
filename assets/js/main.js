@@ -46,10 +46,11 @@ function renderPublications(container, publications, name) {
     const href = safeUrl(pub.doiUrl || (pub.doiValue ? `https://doi.org/${pub.doiValue}` : pub.url));
     const title = el(href ? 'a' : 'span','',pub.title || 'Publicação');
     if (href) { title.href = href; title.target='_blank'; title.rel='noopener noreferrer'; } heading.append(title); body.append(heading);
-    body.append(el('p','pub-meta',[pub.venue, pub.publicationDate].filter(Boolean).join(' · ')));
+    const venue = ({ article:'Artigo', 'book-chapter':'Capítulo de livro', book:'Livro', 'conference-paper':'Trabalho em congresso' })[pub.venue] || pub.venue;
+    body.append(el('p','pub-meta',[venue, pub.publicationDate].filter(Boolean).join(' · ')));
     const authors = Array.isArray(pub.authors) ? pub.authors : typeof pub.authors === 'string' ? pub.authors.split(/,\s*/) : [];
     if (authors.length) { const line = el('p','pub-authors'); authors.forEach((author,index) => { if (index) line.append(document.createTextNode(', ')); const part = el((name && author.toLocaleLowerCase() === name.toLocaleLowerCase()) ? 'strong' : 'span','',author); line.append(part); }); body.append(line); }
-    row.append(body); if (pub.citationCount != null && Number(pub.citationCount) > 0) row.append(el('span','pub-citations',`${pub.citationCount} citações`)); container.append(row);
+    row.append(body); if (pub.citationCount != null && Number(pub.citationCount) > 0) row.append(el('span','pub-citations',`${pub.citationCount} ${Number(pub.citationCount) === 1 ? 'citação' : 'citações'}`)); container.append(row);
   });
 }
 function byRecent(a,b) { return String(b.publicationDate || b.publication_date || b.year || '').localeCompare(String(a.publicationDate || a.publication_date || a.year || '')); }
