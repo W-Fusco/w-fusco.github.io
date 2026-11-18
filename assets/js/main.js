@@ -49,7 +49,7 @@ function renderPublications(container, publications, name) {
     body.append(el('p','pub-meta',[pub.venue, pub.publicationDate].filter(Boolean).join(' · ')));
     const authors = Array.isArray(pub.authors) ? pub.authors : typeof pub.authors === 'string' ? pub.authors.split(/,\s*/) : [];
     if (authors.length) { const line = el('p','pub-authors'); authors.forEach((author,index) => { if (index) line.append(document.createTextNode(', ')); const part = el((name && author.toLocaleLowerCase() === name.toLocaleLowerCase()) ? 'strong' : 'span','',author); line.append(part); }); body.append(line); }
-    row.append(body); if (Number.isFinite(Number(pub.citationCount))) row.append(el('span','pub-citations',`${pub.citationCount} citações`)); container.append(row);
+    row.append(body); if (pub.citationCount != null && Number(pub.citationCount) > 0) row.append(el('span','pub-citations',`${pub.citationCount} citações`)); container.append(row);
   });
 }
 function byRecent(a,b) { return String(b.publicationDate || b.publication_date || b.year || '').localeCompare(String(a.publicationDate || a.publication_date || a.year || '')); }
@@ -83,7 +83,12 @@ async function init() {
   else if ($('#top-section')) $('#top-section').hidden = true;
   renderPublications($('#all-publications'),[...publications].sort(byRecent),profile.name);
   const stats = data.stats || {}; const metrics = $('#metrics');
-  if (metrics) { [['citationCount','Citações'],['paperCount','Publicações'],['hIndex','Índice h']].forEach(([key,label]) => { if (stats[key] == null) return; const metric=el('div','metric'); metric.append(el('strong','',Number(stats[key]).toLocaleString('pt-BR')),el('span','',label)); metrics.append(metric); }); if (!metrics.children.length) metrics.hidden=true; }
-  if (data.updated && $('#data-note')) $('#data-note').textContent=`Seleção baseada no Currículo Lattes atualizado em ${new Date(`${data.updated}T12:00:00`).toLocaleDateString('pt-BR')}.`;
+  if (metrics) { [['citationCount','Citações'],['paperCount','Trabalhos indexados'],['hIndex','Índice h'],['i10Index','Índice i10']].forEach(([key,label]) => { if (stats[key] == null) return; const metric=el('div','metric'); metric.append(el('strong','',Number(stats[key]).toLocaleString('pt-BR')),el('span','',label)); metrics.append(metric); }); if (!metrics.children.length) metrics.hidden=true; }
+  if (data.updated && $('#data-note')) {
+    const date = new Date(`${String(data.updated).slice(0,10)}T12:00:00`).toLocaleDateString('pt-BR');
+    $('#data-note').textContent = data.source === 'OpenAlex'
+      ? `Indicadores e publicações indexados pelo OpenAlex, atualizados em ${date}. Os totais podem diferir de outras bases.`
+      : `Seleção baseada no Currículo Lattes atualizado em ${date}.`;
+  }
 }
 init();

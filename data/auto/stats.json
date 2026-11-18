@@ -1,18 +1,94 @@
 {
-  "updated": "2026-11-17",
-  "source": "Currículo Lattes",
-  "stats": {},
+  "updated": "2026-11-18T16:17:24.193Z",
+  "source": "OpenAlex",
+  "author": {
+    "name": "Wilson Fusco",
+    "orcid": "https://orcid.org/0000-0002-1418-0423",
+    "openalexId": "https://openalex.org/A5047853849"
+  },
+  "stats": {
+    "paperCount": 126,
+    "citationCount": 564,
+    "hIndex": 14,
+    "i10Index": 20
+  },
   "publications": [
     {
       "year": 2026,
-      "title": "Infraestrutura na educação infantil em Pernambuco: evidências a partir do Índice de Infraestrutura Escolar (IEPE)",
+      "title": "INFRAESTRUTURA NA EDUCAÇÃO INFANTIL EM PERNAMBUCO: EVIDÊNCIAS A PARTIR DO ÍNDICE DE INFRAESTRUTURA ESCOLAR (IEPE)",
       "authors": [
         "João Gomes da Silva",
         "Wilson Fusco"
       ],
       "venue": "Cadernos de Estudos Sociais",
-      "publicationDate": "2026",
-      "type": "Artigo"
+      "publicationDate": "2026-10-28",
+      "doiValue": "10.33148/ces.v40i2.2796",
+      "doiUrl": "https://doi.org/10.33148/ces.v40i2.2796",
+      "url": "https://doi.org/10.33148/ces.v40i2.2796",
+      "citationCount": 0,
+      "type": "article"
+    },
+    {
+      "year": 2026,
+      "title": "Toritama no Polo de Confecções do Agreste: migração de curta distância e informalidade no trabalho (2010-2024)",
+      "authors": [
+        "Wilson Fusco",
+        "Maria das Neves Medeiros de Melo"
+      ],
+      "venue": "Editora Blucher eBooks",
+      "publicationDate": "2026-10-20",
+      "doiValue": "10.5151/9786555503975-03",
+      "doiUrl": "https://doi.org/10.5151/9786555503975-03",
+      "url": "https://doi.org/10.5151/9786555503975-03",
+      "citationCount": 0,
+      "type": "book-chapter"
+    },
+    {
+      "year": 2026,
+      "title": "Migração, trabalho e setor de confecções: o caso de Pacatuba (CE) no Polo de Confecções da Região Metropolitana de Fortaleza",
+      "authors": [
+        "Denise Cristina Bomtempo",
+        "Wilson Fusco",
+        "Maria das Neves Medeiros de Melo"
+      ],
+      "venue": "Editora Blucher eBooks",
+      "publicationDate": "2026-10-20",
+      "doiValue": "10.5151/9786555503975-05",
+      "doiUrl": "https://doi.org/10.5151/9786555503975-05",
+      "url": "https://doi.org/10.5151/9786555503975-05",
+      "citationCount": 0,
+      "type": "book-chapter"
+    },
+    {
+      "year": 2026,
+      "title": "Expansão do ensino superior, perfil ocupacional e migração: dinâmicas recentes em Caicó (RN)",
+      "authors": [
+        "Thiago Adriano Machado",
+        "Maria das Neves Medeiros de Melo",
+        "Wilson Fusco"
+      ],
+      "venue": "Editora Blucher eBooks",
+      "publicationDate": "2026-10-20",
+      "doiValue": "10.5151/9786555503975-07",
+      "doiUrl": "https://doi.org/10.5151/9786555503975-07",
+      "url": "https://doi.org/10.5151/9786555503975-07",
+      "citationCount": 0,
+      "type": "book-chapter"
+    },
+    {
+      "year": 2026,
+      "title": "Educação infantil no Nordeste: dinâmica demográfica recente e condições de infraestrutura",
+      "authors": [
+        "João Gomes da Silva",
+        "Wilson Fusco"
+      ],
+      "venue": "article",
+      "publicationDate": "2026-01-01",
+      "doiValue": "10.13140/rg.2.2.21131.96805",
+      "doiUrl": "https://doi.org/10.13140/rg.2.2.21131.96805",
+      "url": "https://doi.org/10.13140/rg.2.2.21131.96805",
+      "citationCount": 0,
+      "type": "article"
     },
     {
       "year": 2026,
@@ -24,7 +100,27 @@
       ],
       "venue": "Editora Blucher",
       "publicationDate": "2026",
-      "type": "Livro organizado"
+      "doiValue": null,
+      "doiUrl": null,
+      "url": null,
+      "citationCount": null,
+      "type": "book"
+    },
+    {
+      "year": 2025,
+      "title": "DIGITAL AND PHYSICAL INFRASTRUCTURE INEQUALITIES AND STUDENT FLOW IN BRAZILIAN UPPER SECONDARY SCHOOLS: DATA-CENTRED INSIGHTS FROM THE NATIONAL SCHOOL CENSUS",
+      "authors": [
+        "Wilson Fusco",
+        "Hugo Barbosa",
+        "Darcilene Cláudio Gomes"
+      ],
+      "venue": "ICERI proceedings",
+      "publicationDate": "2025-11-01",
+      "doiValue": "10.21125/iceri.2025.2472",
+      "doiUrl": "https://doi.org/10.21125/iceri.2025.2472",
+      "url": "https://doi.org/10.21125/iceri.2025.2472",
+      "citationCount": 0,
+      "type": "conference-paper"
     },
     {
       "year": 2025,
@@ -34,8 +130,12 @@
         "Wilson Fusco"
       ],
       "venue": "Caderno Pedagógico",
-      "publicationDate": "2025",
-      "type": "Artigo"
+      "publicationDate": "2025-07-16",
+      "doiValue": "10.54033/cadpedv22n9-237",
+      "doiUrl": "https://doi.org/10.54033/cadpedv22n9-237",
+      "url": "https://doi.org/10.54033/cadpedv22n9-237",
+      "citationCount": 0,
+      "type": "article"
     },
     {
       "year": 2025,
@@ -44,9 +144,13 @@
         "Wilson Fusco",
         "Leandro Nazareno Basílio Júnior"
       ],
-      "venue": "Revista Interdisciplinar da Mobilidade Humana",
-      "publicationDate": "2025",
-      "type": "Artigo"
+      "venue": "REMHU Revista Interdisciplinar da Mobilidade Humana",
+      "publicationDate": "2025-01-01",
+      "doiValue": "10.1590/1980-858525038800033202",
+      "doiUrl": "https://doi.org/10.1590/1980-858525038800033202",
+      "url": "https://doi.org/10.1590/1980-858525038800033202",
+      "citationCount": 0,
+      "type": "article"
     },
     {
       "year": 2025,
@@ -56,9 +160,255 @@
         "Maria das Neves Medeiros de Melo"
       ],
       "venue": "Confins",
-      "publicationDate": "2025",
-      "type": "Artigo"
+      "publicationDate": "2025-01-01",
+      "doiValue": "10.4000/15f0a",
+      "doiUrl": "https://doi.org/10.4000/15f0a",
+      "url": "https://doi.org/10.4000/15f0a",
+      "citationCount": 0,
+      "type": "article"
+    },
+    {
+      "year": 2024,
+      "title": "MOBILIDADE PENDULAR NAS REGIÕES NORTE E NORDESTE DO BRASIL: ESTUDANTES COM E SEM DEFICIÊNCIA",
+      "authors": [
+        "Ângela Thaís Araújo de Almeida",
+        "Wilson Fusco",
+        "Maria José Silva Lobato"
+      ],
+      "venue": "Editora Realize eBooks",
+      "publicationDate": "2024-11-28",
+      "doiValue": "10.46943/x.conedu.2024.gt10.044",
+      "doiUrl": "https://doi.org/10.46943/x.conedu.2024.gt10.044",
+      "url": "https://doi.org/10.46943/x.conedu.2024.gt10.044",
+      "citationCount": 0,
+      "type": "book-chapter"
+    },
+    {
+      "year": 2024,
+      "title": "TRENDS AND TRANSFORMATIONS IN SKILLED MIGRATION: THE CASE OF BRAZILIANS IN PORTUGAL",
+      "authors": [
+        "Wilson Fusco",
+        "Leandro Nazareno Basílio Júnior"
+      ],
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "publicationDate": "2024-07-25",
+      "doiValue": "10.5281/zenodo.21640912",
+      "doiUrl": "https://doi.org/10.5281/zenodo.21640912",
+      "url": "https://doi.org/10.5281/zenodo.21640912",
+      "citationCount": 0,
+      "type": "conference-paper"
+    },
+    {
+      "year": 2024,
+      "title": "A valorização docente anunciada na Meta 16 do Plano Nacional de Educação 2014-2024",
+      "authors": [
+        "Zarah Barbosa Lira",
+        "Suiany Carvalho Padilha",
+        "Wilson Fusco"
+      ],
+      "venue": "Interritórios",
+      "publicationDate": "2024-05-02",
+      "doiValue": "10.51359/2525-7668.2024.259014",
+      "doiUrl": "https://doi.org/10.51359/2525-7668.2024.259014",
+      "url": "https://doi.org/10.51359/2525-7668.2024.259014",
+      "citationCount": 0,
+      "type": "article"
+    },
+    {
+      "year": 2023,
+      "title": "SPATIAL DISTRIBUTION OF THE QUALIFIED BRAZILIAN POPULATION RESIDING IN PORTUGAL BETWEEN 2011 AND 2021 AND ITS MOBILITY FOR WORK OR STUDY",
+      "authors": [
+        "Leandro Nazareno Basílio Júnior",
+        "Wilson Fusco"
+      ],
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "publicationDate": "2023-07-13",
+      "doiValue": "10.5281/zenodo.21641715",
+      "doiUrl": "https://doi.org/10.5281/zenodo.21641715",
+      "url": "https://doi.org/10.5281/zenodo.21641715",
+      "citationCount": 0,
+      "type": "conference-paper"
+    },
+    {
+      "year": 2023,
+      "title": "TRAJETÓRIAS TEMPORAIS DAS CONCEPÇÕES NOS TEMPOS DE ZIKA E COVID-19 NA REGIÃO NORDESTE DO BRASIL",
+      "authors": [
+        "Morvan de Mello Moreira",
+        "Wilson Fusco"
+      ],
+      "venue": "Cadernos de Estudos Sociais",
+      "publicationDate": "2023-04-11",
+      "doiValue": "10.33148/cesv37n1(2022)2120",
+      "doiUrl": "https://doi.org/10.33148/cesv37n1(2022)2120",
+      "url": "https://doi.org/10.33148/cesv37n1(2022)2120",
+      "citationCount": 0,
+      "type": "article"
+    },
+    {
+      "year": 2023,
+      "title": "Docentes do ensino médio no Nordeste: migração e mobilidade pendular entre 2013 e 2017",
+      "authors": [
+        "Wilson Fusco",
+        "Ricardo Ojima",
+        "Járvis Campos",
+        "Silvana Nunes de Queiróz"
+      ],
+      "venue": "urbe Revista Brasileira de Gestão Urbana",
+      "publicationDate": "2023-01-01",
+      "doiValue": "10.1590/2175-3369.015.e20220040",
+      "doiUrl": "https://doi.org/10.1590/2175-3369.015.e20220040",
+      "url": "https://doi.org/10.1590/2175-3369.015.e20220040",
+      "citationCount": 1,
+      "type": "article"
+    },
+    {
+      "year": 2023,
+      "title": "Potentialités et faiblesses des recensements démographiques de 2010 et de 2022 pour l’étude du travail domestique rémunéré au Brésil",
+      "authors": [
+        "Luana Junqueira Dias Myrrha",
+        "Ana Julieta Teodoro Cleaver",
+        "Maria de Fátima Lage Guerra",
+        "Wilson Fusco"
+      ],
+      "venue": "Brésil(s)",
+      "publicationDate": "2023-01-01",
+      "doiValue": "10.4000/bresils.14644",
+      "doiUrl": "https://doi.org/10.4000/bresils.14644",
+      "url": "https://doi.org/10.4000/bresils.14644",
+      "citationCount": 1,
+      "type": "article"
+    },
+    {
+      "year": 2023,
+      "title": "Potencialidades e fragilidades dos Censos Demográficos de 2010 e 2022 para o estudo do trabalho doméstico remunerado no Brasil",
+      "authors": [
+        "Luana Junqueira Dias Myrrha",
+        "Ana Julieta Teodoro Cleaver",
+        "Maria de Fátima Lage Guerra",
+        "Wilson Fusco"
+      ],
+      "venue": "Confins",
+      "publicationDate": "2023-01-01",
+      "doiValue": "10.4000/confins.51510",
+      "doiUrl": "https://doi.org/10.4000/confins.51510",
+      "url": "https://doi.org/10.4000/confins.51510",
+      "citationCount": 2,
+      "type": "article"
+    },
+    {
+      "year": 2022,
+      "title": "SPATIAL MOBILITY AND ACCESS TO SPECIALIZED EDUCATIONAL SERVICE: STUDENTS WITH DISABILITIES IN THE NORTHEAST REGION OF BRAZIL",
+      "authors": [
+        "Ângela Thaís Araújo de Almeida",
+        "Wilson Fusco",
+        "Járvis Campos",
+        "Alex Alcebíades de Sousa Filho Fontoura",
+        "Moisés Alberto Calle Aguirre"
+      ],
+      "venue": "EDULEARN proceedings",
+      "publicationDate": "2022-07-01",
+      "doiValue": "10.21125/edulearn.2022.2188",
+      "doiUrl": "https://doi.org/10.21125/edulearn.2022.2188",
+      "url": "https://doi.org/10.21125/edulearn.2022.2188",
+      "citationCount": 0,
+      "type": "conference-paper"
+    },
+    {
+      "year": 2022,
+      "title": "Impact of the COVID-19 pandemic on the number of births in Pernambuco Brazil",
+      "authors": [
+        "Heitor Victor Veiga da Costa",
+        "Cristine Vieira do Bonfim",
+        "Wilson Fusco",
+        "Morvan de Melo Moreira",
+        "Fernando M. de Paula Neto"
+      ],
+      "venue": "Geospatial health",
+      "publicationDate": "2022-06-15",
+      "doiValue": "10.4081/gh.2022.1069",
+      "doiUrl": "https://doi.org/10.4081/gh.2022.1069",
+      "url": "https://doi.org/10.4081/gh.2022.1069",
+      "citationCount": 3,
+      "type": "article"
     }
   ],
-  "topPublications": []
+  "topPublications": [
+    {
+      "year": 2019,
+      "title": "Migrantes Nordestinos na Região Metropolitana de São Paulo: características socioeconômicas e distribuição espacial",
+      "authors": [
+        "Maria das Neves Medeiros de Melo",
+        "Wilson Fusco"
+      ],
+      "venue": "Confins",
+      "publicationDate": "2019-01-01",
+      "doiValue": "10.4000/confins.19451",
+      "doiUrl": "https://doi.org/10.4000/confins.19451",
+      "url": "https://doi.org/10.4000/confins.19451",
+      "citationCount": 47,
+      "type": "article"
+    },
+    {
+      "year": 2007,
+      "title": "Mobilidade Populacional e Migração no Mercosul: A fronteira do Brasil com Bolívia e Paraguai *",
+      "authors": [
+        "Sylvain Souchaud",
+        "Roberto Luíz do Carmo",
+        "Wilson Fusco"
+      ],
+      "venue": "Teoria & Pesquisa: Revista de Ciência Política",
+      "publicationDate": "2007-01-01",
+      "doiValue": null,
+      "doiUrl": null,
+      "url": "http://www.teoriaepesquisa.ufscar.br/index.php/tp/article/download/32/25",
+      "citationCount": 35,
+      "type": "article"
+    },
+    {
+      "year": 2015,
+      "title": "Migrações e nordestinos pelo Brasil: uma breve contextualização",
+      "authors": [
+        "Wilson Fusco",
+        "Ricardo Ojima"
+      ],
+      "venue": "book-chapter",
+      "publicationDate": "2015-01-01",
+      "doiValue": "10.5151/blucheroa-ojimafusco-04",
+      "doiUrl": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
+      "url": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
+      "citationCount": 34,
+      "type": "book-chapter"
+    },
+    {
+      "year": 2011,
+      "title": "Migration and social networks — An explanatory multi-evolutionary agent-based model",
+      "authors": [
+        "Hugo Barbosa",
+        "Fernando Buarque de Lima Neto",
+        "Wilson Fusco"
+      ],
+      "venue": "IEEE Symposium on Intelligent Agent (IA)",
+      "publicationDate": "2011-04-01",
+      "doiValue": "10.1109/ia.2011.5953616",
+      "doiUrl": "https://doi.org/10.1109/ia.2011.5953616",
+      "url": "https://doi.org/10.1109/ia.2011.5953616",
+      "citationCount": 33,
+      "type": "conference-paper"
+    },
+    {
+      "year": 2016,
+      "title": "Nordeste do Brasil: interiorização do ensino superior e mobilidade pendular",
+      "authors": [
+        "Wilson Fusco",
+        "Ricardo Ojima"
+      ],
+      "venue": "article",
+      "publicationDate": "2016-01-01",
+      "doiValue": "10.13140/rg.2.2.14796.41608",
+      "doiUrl": "https://doi.org/10.13140/rg.2.2.14796.41608",
+      "url": "https://doi.org/10.13140/rg.2.2.14796.41608",
+      "citationCount": 30,
+      "type": "article"
+    }
+  ]
 }
