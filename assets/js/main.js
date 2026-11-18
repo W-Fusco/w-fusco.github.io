@@ -9,27 +9,26 @@ function renderShell(profile) {
   const name = profile.name || 'Wilson Fusco';
   document.title = `${({home:'Início',about:'Sobre',research:'Pesquisa',publications:'Publicações',teaching:'Ensino',talks:'Apresentações',cv:'Currículo',contact:'Contato'})[page] || 'Página'} · ${name}`;
   const header = $('#site-header');
-  header.innerHTML = `<div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✳</span><span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button><nav class="nav" id="primary-nav" aria-label="Navegação principal"><a href="index.html" data-nav="home">Início</a><div class="nav-group"><button type="button" aria-expanded="false">Pesquisa</button><div class="dropdown"><a href="research.html" data-nav="research">Linhas de pesquisa</a><a href="publications.html" data-nav="publications">Publicações</a></div></div><div class="nav-group"><button type="button" aria-expanded="false">Acadêmico</button><div class="dropdown"><a href="teaching.html" data-nav="teaching">Ensino</a><a href="talks.html" data-nav="talks">Apresentações</a><a href="cv.html" data-nav="cv">Currículo</a></div></div><div class="nav-group"><button type="button" aria-expanded="false">Sobre</button><div class="dropdown"><a href="about.html" data-nav="about">Perfil</a><a href="contact.html" data-nav="contact">Contato</a></div></div></nav></div>`;
-  header.querySelector('.brand span:last-child').textContent = name;
-  header.querySelector(`[data-nav="${page}"]`)?.classList.add('active');
+  header.innerHTML = `<div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">WF</span><span class="brand-name"></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">Menu ☰</button><nav class="nav" id="primary-nav" aria-label="Navegação principal"><a href="research.html" data-nav="research">Pesquisa</a><a href="publications.html" data-nav="publications">Publicações</a><a href="teaching.html" data-nav="teaching">Ensino</a><a href="talks.html" data-nav="talks">Apresentações</a><a href="cv.html" data-nav="cv">Currículo</a><a href="about.html" data-nav="about">Sobre</a><a class="nav-contact" href="contact.html" data-nav="contact">Contato ↗</a></nav></div>`;
+  header.querySelector('.brand-name').textContent = name;
+  const currentNav = header.querySelector(`[data-nav="${page}"]`);
+  if (currentNav) { currentNav.classList.add('active'); currentNav.setAttribute('aria-current', 'page'); }
   const menu = header.querySelector('.menu-toggle');
   const nav = header.querySelector('.nav');
-  menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
-  header.querySelectorAll('.nav-group > button').forEach(button => button.addEventListener('click', () => {
-    const group = button.parentElement;
-    const open = !group.classList.contains('open');
-    header.querySelectorAll('.nav-group').forEach(item => { item.classList.remove('open'); item.querySelector('button').setAttribute('aria-expanded', 'false'); });
-    group.classList.toggle('open', open); button.setAttribute('aria-expanded', String(open));
-  }));
-  document.addEventListener('click', event => { if (!header.contains(event.target)) header.querySelectorAll('.nav-group').forEach(item => { item.classList.remove('open'); item.querySelector('button').setAttribute('aria-expanded', 'false'); }); });
-  $('#site-footer').innerHTML = `<div class="footer-inner"><p>© <span class="footer-year"></span> <span class="footer-name"></span></p><p>Pesquisa, ensino e colaboração.</p><a href="contact.html">Contato ↗</a></div>`;
+  const closeMenu = () => { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); menu.setAttribute('aria-label', 'Abrir menu'); };
+  menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu'); });
+  document.addEventListener('click', event => { if (!header.contains(event.target)) closeMenu(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+  $('#site-footer').innerHTML = `<div class="footer-inner"><p>© <span class="footer-year"></span> <span class="footer-name"></span></p><p>Pesquisa, ensino e colaboração.</p><a class="footer-email" href="contact.html">Contato ↗</a></div>`;
+  const email = safeUrl(profile.links?.email);
+  if (email) { const link = $('.footer-email'); link.href = email; link.textContent = email.replace(/^mailto:/, ''); }
   $('.footer-year').textContent = new Date().getFullYear(); $('.footer-name').textContent = name;
 }
 
 function renderLinks(container, links) {
   if (!container) return;
   const labels = { email:'E-mail', lattes:'Currículo Lattes', scholar:'Google Scholar', orcid:'ORCID', github:'GitHub', linkedin:'LinkedIn', university:'Fundaj', website:'Site' };
-  Object.entries(links || {}).forEach(([key, value]) => { const href = safeUrl(value); if (!href) return; const a = el('a', '', `${labels[key] || key} ↗`); a.href = href; if (!href.startsWith('mailto:')) { a.target = '_blank'; a.rel = 'noopener noreferrer'; } container.append(a); });
+  Object.entries(links || {}).forEach(([key, value]) => { const href = safeUrl(value); if (!href) return; const label = key === 'email' && container.id === 'contact-links' ? href.replace(/^mailto:/, '') : labels[key] || key; const a = el('a', '', `${label} ↗`); a.href = href; if (!href.startsWith('mailto:')) { a.target = '_blank'; a.rel = 'noopener noreferrer'; } container.append(a); });
 }
 function renderThemes(container, themes) {
   if (!container) return;
@@ -63,9 +62,9 @@ function renderTimeline(container, items) {
 async function init() {
   const profile = await readJson('data/profile.json') || {};
   renderShell(profile);
-  setText('#hero-eyebrow',profile.heroEyebrow); setText('#hero-title',profile.heroTitle); setText('#hero-lead',profile.heroLead); setText('#hero-name',profile.name); setText('#hero-role',profile.role);
+  setText('#hero-eyebrow',profile.heroEyebrow); setText('#hero-name-heading',profile.name); setText('#hero-title',profile.heroTitle); setText('#hero-lead',profile.heroLead);
   setText('#intro-heading',profile.introHeading); setText('#intro-text',profile.introText); setText('#about-lead',profile.aboutLead); setText('#about-bio',profile.bio); setText('#research-lead',profile.researchLead); setText('#teaching-lead',profile.teachingLead); setText('#cv-lead',profile.cvLead);
-  if (profile.portrait && $('#portrait')) { const href = safeUrl(profile.portrait); if (href) { const img = el('img'); img.src=href; img.alt=`Retrato de ${profile.name}`; $('#portrait').replaceChildren(img); } }
+  if (profile.portrait && $('#portrait')) { const href = safeUrl(profile.portrait); if (href) { const img = el('img'); img.src=href; img.alt=`Retrato de ${profile.name}`; img.decoding='async'; img.fetchPriority='high'; $('#portrait').replaceChildren(img); } }
   renderLinks($('#hero-links'),profile.links); renderLinks($('#contact-links'),profile.links);
   renderThemes($('#theme-list'),profile.themes); renderThemes($('#research-themes'),profile.themes);
   (profile.facts || []).forEach(fact => { $('#about-facts')?.append(el('dt','',fact.label),el('dd','',fact.value)); });

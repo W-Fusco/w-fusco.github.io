@@ -6,7 +6,7 @@ Site estático publicado em `https://w-fusco.github.io/`. O visual e a estrutura
 
 Edite `data/profile.json` com biografia, temas, projetos, ensino, currículo, apresentações e links. `data/auto/stats.json` é gerado a partir do perfil OpenAlex associado ao ORCID `0000-0002-1418-0423`. A página inicial mostra três trabalhos recentes; a página de publicações mostra 20 trabalhos recentes, cinco trabalhos mais citados e indicadores do OpenAlex. O livro organizado de 2026 permanece em `data/manual_publications.json` enquanto não for encontrado no OpenAlex.
 
-Para ver o site localmente, sirva esta pasta por HTTP, por exemplo com `python -m http.server 8000`, e abra `http://localhost:8000`. Abrir o arquivo HTML diretamente pode impedir a leitura dos arquivos JSON pelo navegador.
+Para ver o site localmente, execute `node scripts/preview.mjs` nesta pasta e abra `http://127.0.0.1:8765/`. Abrir o arquivo HTML diretamente pode impedir a leitura dos arquivos JSON pelo navegador.
 
 ## Atualização automática
 
