@@ -2,12 +2,12 @@
   "source": "Google Acadêmico",
   "profileUrl": "https://scholar.google.com/citations?hl=pt-BR&user=2N7kn54AAAAJ",
   "checkedOn": "2026-11-18",
+  "checkedAt": "2026-11-18T17:14:06.690Z",
+  "lastAttemptAt": "2026-11-18T17:14:06.690Z",
+  "lastAttemptStatus": "success",
   "stats": {
     "citationCount": 946,
     "hIndex": 17,
     "i10Index": 32
-  },
-  "lastAttemptAt": "2026-11-18T17:10:36.223Z",
-  "lastAttemptStatus": "failed",
-  "lastAttemptError": "scholar.google.com returned HTTP 403"
+  }
 }
