@@ -54,6 +54,16 @@ function renderPublications(container, publications, name) {
 }
 function byRecent(a,b) { return String(b.publicationDate || b.publication_date || b.year || '').localeCompare(String(a.publicationDate || a.publication_date || a.year || '')); }
 function byCitations(a,b) { return Number(b.citationCount || 0) - Number(a.citationCount || 0); }
+function renderMetrics(container, stats, fields) {
+  if (!container) return;
+  fields.forEach(([key,label]) => {
+    if (stats?.[key] == null || !Number.isFinite(Number(stats[key]))) return;
+    const metric = el('div','metric');
+    metric.append(el('strong','',Number(stats[key]).toLocaleString('pt-BR')),el('span','',label));
+    container.append(metric);
+  });
+  if (!container.children.length) container.closest('.stat-source')?.setAttribute('hidden','');
+}
 function renderTimeline(container, items) {
   if (!container) return;
   (items || []).forEach(item => { const row=el('div','timeline-item'); row.append(el('span','theme-num',item.period || ''),el('div')); row.lastChild.append(el('h2','',item.title),el('p','',item.description || '')); container.append(row); });
@@ -82,12 +92,21 @@ async function init() {
   if (top.length) renderPublications($('#top-publications'),top,profile.name);
   else if ($('#top-section')) $('#top-section').hidden = true;
   renderPublications($('#all-publications'),[...publications].sort(byRecent),profile.name);
-  const stats = data.stats || {}; const metrics = $('#metrics');
-  if (metrics) { [['citationCount','Citações'],['paperCount','Trabalhos indexados'],['hIndex','Índice h'],['i10Index','Índice i10']].forEach(([key,label]) => { if (stats[key] == null) return; const metric=el('div','metric'); metric.append(el('strong','',Number(stats[key]).toLocaleString('pt-BR')),el('span','',label)); metrics.append(metric); }); if (!metrics.children.length) metrics.hidden=true; }
+  renderMetrics($('#metrics'),data.stats,[['citationCount','Citações'],['paperCount','Trabalhos indexados'],['hIndex','Índice h'],['i10Index','Índice i10']]);
+  if ($('#scholar-metrics')) {
+    const scholar = await readJson('data/scholar_snapshot.json') || {};
+    renderMetrics($('#scholar-metrics'),scholar.stats,[['citationCount','Citações'],['hIndex','Índice h'],['i10Index','Índice i10']]);
+    const href = safeUrl(scholar.profileUrl);
+    if (href) $('#scholar-profile').href = href;
+    if (scholar.checkedOn) {
+      const checked = new Date(`${String(scholar.checkedOn).slice(0,10)}T12:00:00`).toLocaleDateString('pt-BR');
+      $('#scholar-note').textContent = `Valores consultados em ${checked}. Para números atuais, abra o perfil.`;
+    }
+  }
   if (data.updated && $('#data-note')) {
     const date = new Date(`${String(data.updated).slice(0,10)}T12:00:00`).toLocaleDateString('pt-BR');
     $('#data-note').textContent = data.source === 'OpenAlex'
-      ? `Indicadores e publicações indexados pelo OpenAlex, atualizados em ${date}. Os totais podem diferir de outras bases.`
+      ? `Seleção de publicações e indicadores do OpenAlex atualizados em ${date}.`
       : `Seleção baseada no Currículo Lattes atualizado em ${date}.`;
   }
 }
