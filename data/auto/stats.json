@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T16:47:00.242Z",
+  "updated": "2026-11-18T16:52:23.716Z",
   "source": "OpenAlex",
   "author": {
     "name": "Wilson Fusco",
@@ -8,7 +8,7 @@
   },
   "stats": {
     "paperCount": 126,
-    "citationCount": 564,
+    "citationCount": 565,
     "hIndex": 14,
     "i10Index": 20
   },
