@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 const PROFILE = 'https://scholar.google.com/citations?user=2N7kn54AAAAJ';
 const ROBOTS = 'https://scholar.google.com/robots.txt';
 const OUTPUT = new URL('../data/scholar_snapshot.json', import.meta.url);
-const HEADERS = { 'User-Agent': 'WilsonFuscoAcademicSite/1.0 (+https://w-fusco.github.io/)' };
+const HEADERS = { 'User-Agent': 'Mozilla/5.0 (compatible; WilsonFuscoAcademicSite/1.0; +https://w-fusco.github.io/)' };
 
 async function getText(url) {
   const response = await fetch(url, { signal: AbortSignal.timeout(30000), headers: HEADERS });
@@ -30,9 +30,9 @@ function parseProfile(html) {
 }
 
 async function main() {
-  const robots = await getText(ROBOTS);
+  const robots = await getText(ROBOTS).catch(error => { throw new Error(`robots.txt: ${error.message}`); });
   if (!/^Allow:\s*\/citations\?user=\s*$/m.test(robots)) throw new Error('Google Scholar no longer permits profile crawling');
-  const stats = parseProfile(await getText(PROFILE));
+  const stats = parseProfile(await getText(PROFILE).catch(error => { throw new Error(`profile: ${error.message}`); }));
   const previous = JSON.parse(await readFile(OUTPUT, 'utf8'));
   if (previous.stats?.citationCount && Math.abs(stats.citationCount - previous.stats.citationCount) > Math.max(100, previous.stats.citationCount * 0.25)) {
     throw new Error('Google Scholar citation count changed unexpectedly; last valid snapshot was preserved');
