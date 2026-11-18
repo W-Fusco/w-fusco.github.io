@@ -1,0 +1,153 @@
+{
+  "name": "Wilson Fusco",
+  "role": "Demógrafo · Pesquisador titular da Fundação Joaquim Nabuco",
+  "heroEyebrow": "DEMOGRAFIA · MIGRAÇÕES · POLÍTICAS PÚBLICAS",
+  "heroTitle": "Compreender a mobilidade humana para pensar o futuro do Brasil.",
+  "heroLead": "Sou pesquisador titular da Fundação Joaquim Nabuco e professor colaborador do Programa de Pós-Graduação em Demografia da UFRN. Investigo migrações, dinâmica populacional e educação, conectando evidências à discussão de políticas públicas.",
+  "introHeading": "Pesquisa demográfica com atenção às pessoas e aos territórios.",
+  "introText": "Minha trajetória reúne estudos sobre migração interna e internacional, mudanças populacionais e demografia da educação. Trabalho com dados quantitativos e pesquisa de campo para compreender como as transformações sociais se expressam no espaço.",
+  "aboutLead": "Demógrafo e cientista social dedicado ao estudo das migrações e da dinâmica populacional brasileira.",
+  "bio": "Sou pesquisador titular da Fundação Joaquim Nabuco (Fundaj), professor colaborador e membro permanente do Programa de Pós-Graduação em Demografia da Universidade Federal do Rio Grande do Norte (UFRN). Também colaboro com o Centro de Estudos Geográficos da Universidade de Lisboa e seu grupo MIGRARE. Formei-me em Ciências Sociais, Sociologia e Demografia na Unicamp, com estágio de doutorado na University of Texas at Austin e pós-doutorados em Paris e Lisboa. Entre 2023 e 2025, fui diretor de Pesquisas Sociais da Fundaj. Minha pesquisa examina migrações internas e internacionais, dinâmica populacional e demografia da educação.",
+  "researchLead": "Investigo a mobilidade das populações, as desigualdades territoriais e suas implicações para a educação e as políticas públicas.",
+  "teachingLead": "Atuo na pós-graduação em Demografia da UFRN, com ensino e orientação em migrações e métodos de pesquisa.",
+  "cvLead": "Formação, atuação institucional e pesquisa em uma síntese para visitantes do site.",
+  "portrait": "",
+  "links": {
+    "lattes": "https://lattes.cnpq.br/5785590497886670",
+    "orcid": "https://orcid.org/0000-0002-1418-0423",
+    "scholar": "https://scholar.google.com/citations?user=2N7kn54AAAAJ",
+    "university": "https://www.gov.br/fundaj/pt-br"
+  },
+  "facts": [
+    {
+      "label": "Atuação",
+      "value": "Fundação Joaquim Nabuco · UFRN"
+    },
+    {
+      "label": "Formação",
+      "value": "Doutorado em Demografia, Unicamp"
+    },
+    {
+      "label": "Pesquisa",
+      "value": "Migrações, população e educação"
+    },
+    {
+      "label": "Reconhecimento",
+      "value": "Bolsista de Produtividade em Pesquisa do CNPq, nível C"
+    }
+  ],
+  "themes": [
+    {
+      "title": "Migração internacional",
+      "description": "Emigração brasileira, circulação de profissionais qualificados, retorno e integração em novos contextos."
+    },
+    {
+      "title": "Mobilidade interna e territórios",
+      "description": "Fluxos migratórios, mobilidade pendular e transformações urbanas e regionais, especialmente no Nordeste."
+    },
+    {
+      "title": "Demografia da educação",
+      "description": "Desigualdades educacionais, deslocamentos de estudantes e docentes e indicadores para políticas públicas."
+    },
+    {
+      "title": "Dinâmica populacional",
+      "description": "Mudanças demográficas, fecundidade e suas relações com desenvolvimento e proteção social."
+    }
+  ],
+  "projects": [
+    {
+      "period": "2025 — atual",
+      "title": "Migração qualificada e retenção de talentos no Brasil",
+      "description": "Projeto coordenado por Wilson Fusco que combina dados censitários, entrevistas e ferramentas computacionais para estudar a emigração de brasileiros qualificados e as condições de retorno."
+    },
+    {
+      "period": "2024 — atual",
+      "title": "Observatório da Emigração Brasileira",
+      "description": "Colaboração em rede para analisar transformações nos processos migratórios internacionais para, no e do Brasil, com ênfase na emigração."
+    },
+    {
+      "period": "2023 — 2026",
+      "title": "Polos de Confecções do Nordeste",
+      "description": "Pesquisa coordenada sobre migração, mobilidade pendular, trabalho e acesso a serviços em municípios ligados à indústria de confecções."
+    }
+  ],
+  "teaching": [
+    {
+      "title": "Pós-graduação em Demografia · UFRN",
+      "description": "Docência em aspectos socioeconômicos da migração, metodologia de pesquisa, seminário de dissertação e tópicos avançados em mobilidade espacial da população."
+    },
+    {
+      "title": "Orientação acadêmica",
+      "description": "Orientação de pesquisas de mestrado e doutorado em demografia, com temas que incluem migração, mobilidade, educação e desigualdades territoriais."
+    }
+  ],
+  "cv": [
+    {
+      "period": "2007 — atual",
+      "title": "Pesquisador titular · Fundação Joaquim Nabuco",
+      "description": "Pesquisa em demografia, migrações e questões sociais brasileiras."
+    },
+    {
+      "period": "2015 — atual",
+      "title": "Professor colaborador · UFRN",
+      "description": "Membro permanente do Programa de Pós-Graduação em Demografia."
+    },
+    {
+      "period": "2017 — atual",
+      "title": "Investigador colaborador · Universidade de Lisboa",
+      "description": "Colaboração com o Centro de Estudos Geográficos e o grupo MIGRARE."
+    },
+    {
+      "period": "2023 — 2025",
+      "title": "Diretor de Pesquisas Sociais · Fundaj",
+      "description": "Liderança da área de pesquisas sociais da instituição."
+    },
+    {
+      "period": "2017 — 2018",
+      "title": "Pós-doutorado · Universidade de Lisboa",
+      "description": "Pesquisa no Instituto de Geografia e Ordenamento do Território."
+    },
+    {
+      "period": "2012 — 2013",
+      "title": "Pós-doutorado · Paris",
+      "description": "Pesquisa em estudos de migrações e sociedades, com bolsa do CNPq."
+    },
+    {
+      "period": "2005",
+      "title": "Doutorado em Demografia · Unicamp",
+      "description": "Pesquisa sobre redes sociais e migração internacional, com período de estudos na University of Texas at Austin."
+    },
+    {
+      "period": "2000",
+      "title": "Mestrado em Sociologia · Unicamp",
+      "description": "Pesquisa sobre redes sociais na migração internacional."
+    },
+    {
+      "period": "1998",
+      "title": "Graduação em Ciências Sociais · Unicamp",
+      "description": "Formação em Ciências Sociais."
+    }
+  ],
+  "talks": [
+    {
+      "period": "2026",
+      "title": "Educational Mobility and Labor Market Segmentation",
+      "description": "Apresentação na 23ª conferência anual da IMISCOE, Girona, Espanha."
+    },
+    {
+      "period": "2025",
+      "title": "Segmentação ocupacional e imigrantes em Portugal",
+      "description": "Apresentação sobre a posição de brasileiros frente a outras nacionalidades."
+    },
+    {
+      "period": "2025",
+      "title": "Digital divides, territorial inequalities and student trajectories",
+      "description": "Apresentação com Hugo S. Barbosa Filho sobre trajetórias no ensino médio brasileiro e dados do Censo Escolar."
+    },
+    {
+      "period": "2025",
+      "title": "Aplicativo de Mapeamento e Perfil dos Emigrantes Brasileiros",
+      "description": "Conferência sobre mapeamento e perfil da emigração brasileira."
+    }
+  ]
+}
