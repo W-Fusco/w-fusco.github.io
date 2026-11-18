@@ -37,10 +37,12 @@ async function main() {
   if (previous.stats?.citationCount && Math.abs(stats.citationCount - previous.stats.citationCount) > Math.max(100, previous.stats.citationCount * 0.25)) {
     throw new Error('Google Scholar citation count changed unexpectedly; last valid snapshot was preserved');
   }
+  const checkedAt = new Date().toISOString();
   const snapshot = {
     source: 'Google Acadêmico',
     profileUrl: previous.profileUrl,
-    checkedOn: new Date().toISOString().slice(0, 10),
+    checkedOn: checkedAt.slice(0, 10),
+    checkedAt,
     stats
   };
   await writeFile(OUTPUT, JSON.stringify(snapshot, null, 2) + '\n', 'utf8');
