@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T07:14:10.895Z",
+  "updated": "2026-11-22T07:14:23.096Z",
   "source": "OpenAlex",
   "author": {
     "name": "Wilson Fusco",
@@ -8,7 +8,7 @@
   },
   "stats": {
     "paperCount": 126,
-    "citationCount": 565,
+    "citationCount": 583,
     "hIndex": 14,
     "i10Index": 20
   },
@@ -349,6 +349,21 @@
       "type": "article"
     },
     {
+      "year": 2015,
+      "title": "Migrações e nordestinos pelo Brasil: uma breve contextualização",
+      "authors": [
+        "Wilson Fusco",
+        "Ricardo Ojima"
+      ],
+      "venue": "book-chapter",
+      "publicationDate": "2015-01-01",
+      "doiValue": "10.5151/blucheroa-ojimafusco-04",
+      "doiUrl": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
+      "url": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
+      "citationCount": 35,
+      "type": "book-chapter"
+    },
+    {
       "year": 2007,
       "title": "Mobilidade Populacional e Migração no Mercosul: A fronteira do Brasil com Bolívia e Paraguai *",
       "authors": [
@@ -363,21 +378,6 @@
       "url": "http://www.teoriaepesquisa.ufscar.br/index.php/tp/article/download/32/25",
       "citationCount": 35,
       "type": "article"
-    },
-    {
-      "year": 2015,
-      "title": "Migrações e nordestinos pelo Brasil: uma breve contextualização",
-      "authors": [
-        "Wilson Fusco",
-        "Ricardo Ojima"
-      ],
-      "venue": "book-chapter",
-      "publicationDate": "2015-01-01",
-      "doiValue": "10.5151/blucheroa-ojimafusco-04",
-      "doiUrl": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
-      "url": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
-      "citationCount": 34,
-      "type": "book-chapter"
     },
     {
       "year": 2011,
@@ -407,7 +407,7 @@
       "doiValue": "10.13140/rg.2.2.14796.41608",
       "doiUrl": "https://doi.org/10.13140/rg.2.2.14796.41608",
       "url": "https://doi.org/10.13140/rg.2.2.14796.41608",
-      "citationCount": 30,
+      "citationCount": 31,
       "type": "article"
     }
   ]
