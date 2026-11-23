@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T07:14:23.096Z",
+  "updated": "2026-11-23T07:40:25.029Z",
   "source": "OpenAlex",
   "author": {
     "name": "Wilson Fusco",
@@ -349,6 +349,22 @@
       "type": "article"
     },
     {
+      "year": 2007,
+      "title": "Mobilidade Populacional e Migração no Mercosul: A fronteira do Brasil com Bolívia e Paraguai *",
+      "authors": [
+        "Sylvain Souchaud",
+        "Roberto Luíz do Carmo",
+        "Wilson Fusco"
+      ],
+      "venue": "Teoria & Pesquisa: Revista de Ciência Política",
+      "publicationDate": "2007-01-01",
+      "doiValue": null,
+      "doiUrl": null,
+      "url": "http://www.teoriaepesquisa.ufscar.br/index.php/tp/article/download/32/25",
+      "citationCount": 36,
+      "type": "article"
+    },
+    {
       "year": 2015,
       "title": "Migrações e nordestinos pelo Brasil: uma breve contextualização",
       "authors": [
@@ -362,22 +378,6 @@
       "url": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
       "citationCount": 35,
       "type": "book-chapter"
-    },
-    {
-      "year": 2007,
-      "title": "Mobilidade Populacional e Migração no Mercosul: A fronteira do Brasil com Bolívia e Paraguai *",
-      "authors": [
-        "Sylvain Souchaud",
-        "Roberto Luíz do Carmo",
-        "Wilson Fusco"
-      ],
-      "venue": "Teoria & Pesquisa: Revista de Ciência Política",
-      "publicationDate": "2007-01-01",
-      "doiValue": null,
-      "doiUrl": null,
-      "url": "http://www.teoriaepesquisa.ufscar.br/index.php/tp/article/download/32/25",
-      "citationCount": 35,
-      "type": "article"
     },
     {
       "year": 2011,
