@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T07:40:25.029Z",
+  "updated": "2026-11-24T07:24:21.315Z",
   "source": "OpenAlex",
   "author": {
     "name": "Wilson Fusco",
@@ -8,7 +8,7 @@
   },
   "stats": {
     "paperCount": 126,
-    "citationCount": 583,
+    "citationCount": 590,
     "hIndex": 14,
     "i10Index": 20
   },
@@ -268,7 +268,8 @@
         "Luana Junqueira Dias Myrrha",
         "Ana Julieta Teodoro Cleaver",
         "Maria de Fátima Lage Guerra",
-        "Wilson Fusco"
+        "Wilson Fusco",
+        "Marlène Monteiro"
       ],
       "venue": "Brésil(s)",
       "publicationDate": "2023-01-01",
@@ -361,7 +362,7 @@
       "doiValue": null,
       "doiUrl": null,
       "url": "http://www.teoriaepesquisa.ufscar.br/index.php/tp/article/download/32/25",
-      "citationCount": 36,
+      "citationCount": 37,
       "type": "article"
     },
     {
@@ -376,7 +377,7 @@
       "doiValue": "10.5151/blucheroa-ojimafusco-04",
       "doiUrl": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
       "url": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
-      "citationCount": 35,
+      "citationCount": 36,
       "type": "book-chapter"
     },
     {
