@@ -3,12 +3,12 @@
   "profileUrl": "https://scholar.google.com/citations?hl=pt-BR&user=2N7kn54AAAAJ",
   "checkedOn": "2026-11-20",
   "checkedAt": "2026-11-20T07:23:30.596Z",
-  "lastAttemptAt": "2026-11-24T07:24:21.748Z",
+  "lastAttemptAt": "2026-11-25T07:28:11.615Z",
   "lastAttemptStatus": "failed",
   "stats": {
     "citationCount": 946,
     "hIndex": 17,
     "i10Index": 32
   },
-  "lastAttemptError": "profile: scholar.google.com returned HTTP 403"
+  "lastAttemptError": "Google Scholar profile identity did not match: undefined / undefined"
 }

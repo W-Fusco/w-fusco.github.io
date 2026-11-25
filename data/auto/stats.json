@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T07:24:21.315Z",
+  "updated": "2026-11-25T07:28:11.318Z",
   "source": "OpenAlex",
   "author": {
     "name": "Wilson Fusco",
@@ -8,9 +8,9 @@
   },
   "stats": {
     "paperCount": 126,
-    "citationCount": 590,
+    "citationCount": 598,
     "hIndex": 14,
-    "i10Index": 20
+    "i10Index": 21
   },
   "publications": [
     {
@@ -269,7 +269,7 @@
         "Ana Julieta Teodoro Cleaver",
         "Maria de Fátima Lage Guerra",
         "Wilson Fusco",
-        "Marlène Monteiro"
+        "Marlene Monteiro"
       ],
       "venue": "Brésil(s)",
       "publicationDate": "2023-01-01",
@@ -362,7 +362,7 @@
       "doiValue": null,
       "doiUrl": null,
       "url": "http://www.teoriaepesquisa.ufscar.br/index.php/tp/article/download/32/25",
-      "citationCount": 37,
+      "citationCount": 39,
       "type": "article"
     },
     {
@@ -377,8 +377,23 @@
       "doiValue": "10.5151/blucheroa-ojimafusco-04",
       "doiUrl": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
       "url": "https://doi.org/10.5151/blucheroa-ojimafusco-04",
-      "citationCount": 36,
+      "citationCount": 38,
       "type": "book-chapter"
+    },
+    {
+      "year": 2016,
+      "title": "Nordeste do Brasil: interiorização do ensino superior e mobilidade pendular",
+      "authors": [
+        "Wilson Fusco",
+        "Ricardo Ojima"
+      ],
+      "venue": "article",
+      "publicationDate": "2016-01-01",
+      "doiValue": "10.13140/rg.2.2.14796.41608",
+      "doiUrl": "https://doi.org/10.13140/rg.2.2.14796.41608",
+      "url": "https://doi.org/10.13140/rg.2.2.14796.41608",
+      "citationCount": 33,
+      "type": "article"
     },
     {
       "year": 2011,
@@ -395,21 +410,6 @@
       "url": "https://doi.org/10.1109/ia.2011.5953616",
       "citationCount": 33,
       "type": "conference-paper"
-    },
-    {
-      "year": 2016,
-      "title": "Nordeste do Brasil: interiorização do ensino superior e mobilidade pendular",
-      "authors": [
-        "Wilson Fusco",
-        "Ricardo Ojima"
-      ],
-      "venue": "article",
-      "publicationDate": "2016-01-01",
-      "doiValue": "10.13140/rg.2.2.14796.41608",
-      "doiUrl": "https://doi.org/10.13140/rg.2.2.14796.41608",
-      "url": "https://doi.org/10.13140/rg.2.2.14796.41608",
-      "citationCount": 31,
-      "type": "article"
     }
   ]
 }
