@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T07:28:11.318Z",
+  "updated": "2026-11-26T07:26:33.532Z",
   "source": "OpenAlex",
   "author": {
     "name": "Wilson Fusco",
@@ -7,10 +7,10 @@
     "openalexId": "https://openalex.org/A5047853849"
   },
   "stats": {
-    "paperCount": 126,
-    "citationCount": 598,
+    "paperCount": 125,
+    "citationCount": 604,
     "hIndex": 14,
-    "i10Index": 21
+    "i10Index": 20
   },
   "publications": [
     {
@@ -346,7 +346,7 @@
       "doiValue": "10.4000/confins.19451",
       "doiUrl": "https://doi.org/10.4000/confins.19451",
       "url": "https://doi.org/10.4000/confins.19451",
-      "citationCount": 47,
+      "citationCount": 48,
       "type": "article"
     },
     {
@@ -392,7 +392,7 @@
       "doiValue": "10.13140/rg.2.2.14796.41608",
       "doiUrl": "https://doi.org/10.13140/rg.2.2.14796.41608",
       "url": "https://doi.org/10.13140/rg.2.2.14796.41608",
-      "citationCount": 33,
+      "citationCount": 34,
       "type": "article"
     },
     {
@@ -408,7 +408,7 @@
       "doiValue": "10.1109/ia.2011.5953616",
       "doiUrl": "https://doi.org/10.1109/ia.2011.5953616",
       "url": "https://doi.org/10.1109/ia.2011.5953616",
-      "citationCount": 33,
+      "citationCount": 30,
       "type": "conference-paper"
     }
   ]
