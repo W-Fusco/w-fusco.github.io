@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T07:26:33.532Z",
+  "updated": "2026-11-27T07:26:17.819Z",
   "source": "OpenAlex",
   "author": {
     "name": "Wilson Fusco",
@@ -8,7 +8,7 @@
   },
   "stats": {
     "paperCount": 125,
-    "citationCount": 604,
+    "citationCount": 606,
     "hIndex": 14,
     "i10Index": 20
   },
@@ -258,7 +258,7 @@
       "doiValue": "10.1590/2175-3369.015.e20220040",
       "doiUrl": "https://doi.org/10.1590/2175-3369.015.e20220040",
       "url": "https://doi.org/10.1590/2175-3369.015.e20220040",
-      "citationCount": 1,
+      "citationCount": 2,
       "type": "article"
     },
     {
@@ -392,7 +392,7 @@
       "doiValue": "10.13140/rg.2.2.14796.41608",
       "doiUrl": "https://doi.org/10.13140/rg.2.2.14796.41608",
       "url": "https://doi.org/10.13140/rg.2.2.14796.41608",
-      "citationCount": 34,
+      "citationCount": 35,
       "type": "article"
     },
     {
