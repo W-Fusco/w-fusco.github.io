@@ -3,11 +3,12 @@
   "profileUrl": "https://scholar.google.com/citations?hl=pt-BR&user=2N7kn54AAAAJ",
   "checkedOn": "2026-11-27",
   "checkedAt": "2026-11-27T07:26:18.099Z",
-  "lastAttemptAt": "2026-11-27T07:26:18.099Z",
-  "lastAttemptStatus": "success",
+  "lastAttemptAt": "2026-11-28T07:20:29.273Z",
+  "lastAttemptStatus": "failed",
   "stats": {
     "citationCount": 949,
     "hIndex": 17,
     "i10Index": 32
-  }
+  },
+  "lastAttemptError": "profile: scholar.google.com returned HTTP 403"
 }
